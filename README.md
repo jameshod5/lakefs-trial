@@ -22,16 +22,9 @@ git clone git@github.com:jameshod5/lakefs-trial.git
 cd lakefs-trial
 ```
 
-You can use either `conda` or `venv` to set up the environment. Follow the below instructions depending on your preference. 
-### Option 1: Using Conda
-Assuming you already have conda installed on your system:
-```bash
-conda create -n mast python=3.11
-conda activate mast
-uv pip install -r requirements.txt
-```
+You can use either `conda` or `venv` to set up the environment. Follow the below instructions for venv:
 
-### Option 2: Using venv
+### Using venv
 Ensure you are using Python version `3.11`:
 ```bash
 uv venv venv
@@ -81,3 +74,5 @@ lakectl config
 ```
 
 And enter the same details as you did to login to LakeFS. Host is http://127.0.0.1:8000
+
+## Now follow the notebook example
