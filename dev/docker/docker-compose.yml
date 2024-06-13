@@ -39,22 +39,6 @@ services:
     networks:
       - dbnetwork
 
-  # This service a bucket for the mast data is none exists.
-  createbuckets:
-    image: minio/mc
-    depends_on:
-      - minio
-    volumes:
-     - ./data/:/data
-    entrypoint: >
-      /bin/sh -c "
-      /usr/bin/mc alias set srv https://minio:9000 minio99 minio123;
-      /usr/bin/mc mb srv/mast;
-      /usr/bin/mc anonymous set public srv/mast;
-      exit 0;
-      "
-    networks:
-      - dbnetwork
 
 networks:
   dbnetwork:
