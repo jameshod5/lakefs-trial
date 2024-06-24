@@ -35,7 +35,11 @@ uv pip install -r requirements.txt
 Use `uv --help` for additional commands, or refer to the documentation if needed.
 
 ### Start the Data Management System
-Run the development container to start the lakefs repo, minio storage and the bucket. You may need to populate your own bucket, for this test case fill it with whatever files you like. Make sure the bucket is named `example-data`.
+Run the development container to start the lakefs repo, minio storage and the bucket. You need to populate your own bucket, for this test case place the `30420.zarr` file inside the bucket. Follow the below command using s5cmd as this will ensure the hidden metadata files are in your bucket. Make sure the bucket is named `zarr-example` in order for the notebooks to work well.
+
+```bash
+s5cmd --endpoint-url http://localhost:9000 cp 30420.zarr s3://zarr-example/
+```
 
 ### Mac Users:
 
