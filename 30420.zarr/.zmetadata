@@ -1,0 +1,105 @@
+{
+    "metadata": {
+        ".zattrs": {
+            "dataset_item_uuid": "6327e756-e587-5c74-8aed-4e595d3546cf",
+            "description": "Plasma Current",
+            "file_name": null,
+            "format": null,
+            "label": "Plasma Current",
+            "mds_name": "\\TOP.ANALYSED.AMC.PLASMA:CURRENT",
+            "name": "AMC_PLASMA CURRENT",
+            "pass_": 0,
+            "rank": 1,
+            "shape": [
+                30000
+            ],
+            "shot": 30420,
+            "shot_id": 30420,
+            "source": "AMC",
+            "status": 1,
+            "time_index": 0,
+            "type": "Analysed",
+            "units": "kA"
+        },
+        ".zgroup": {
+            "zarr_format": 2
+        },
+        "data/.zarray": {
+            "chunks": [
+                30000
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                30000
+            ],
+            "zarr_format": 2
+        },
+        "data/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time"
+            ]
+        },
+        "error/.zarray": {
+            "chunks": [
+                30000
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                30000
+            ],
+            "zarr_format": 2
+        },
+        "error/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time"
+            ]
+        },
+        "time/.zarray": {
+            "chunks": [
+                30000
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                30000
+            ],
+            "zarr_format": 2
+        },
+        "time/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time"
+            ],
+            "units": "s"
+        }
+    },
+    "zarr_consolidated_format": 1
+}

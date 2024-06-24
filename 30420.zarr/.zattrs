@@ -1,0 +1,21 @@
+{
+    "dataset_item_uuid": "6327e756-e587-5c74-8aed-4e595d3546cf",
+    "description": "Plasma Current",
+    "file_name": null,
+    "format": null,
+    "label": "Plasma Current",
+    "mds_name": "\\TOP.ANALYSED.AMC.PLASMA:CURRENT",
+    "name": "AMC_PLASMA CURRENT",
+    "pass_": 0,
+    "rank": 1,
+    "shape": [
+        30000
+    ],
+    "shot": 30420,
+    "shot_id": 30420,
+    "source": "AMC",
+    "status": 1,
+    "time_index": 0,
+    "type": "Analysed",
+    "units": "kA"
+}
