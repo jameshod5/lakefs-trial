@@ -1,5 +1,7 @@
 # lakefs-trial
-Short example on using LakeFS for use with MAST data
+Short example on using LakeFS for use with MAST data.
+
+We have decided to not pursue this approach for data versioning on the FAIR MAST project, and this repo exsits purely as a guide for any future work that may want to use LakeFS as a service. Justification for not using LakeFS is outlined in `lakefs_downsides.docx`. 
 ## Development Setup
 
 ### Mac Users:
@@ -79,4 +81,10 @@ lakectl config
 
 And enter the same details as you did to login to LakeFS. Host is http://127.0.0.1:8000
 
-## Now follow the notebook example
+## lakefs-notebook.ipynb
+ 
+This notebook goes through using lakefs-spec for file navigation, commits and branch management. 
+
+## zarr-lakefs.ipynb
+
+This notebook goes through using the Python SDK for LakeFS, opening and changing a Zarr file.
